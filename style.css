@@ -1,0 +1,92 @@
+:root{
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue:#E7F5FF;
+    --warm-black: #201E1C;
+    --warm-black-1: #282623;
+    --grey: #BABABA;
+    --off-white:#FAF8F7;
+    --just-white:#FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    /*You have to set the main font as familily font*/ 
+    font-family: 'DM Sans', sans-serif;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /*This min-width is used to determine that the width won't be less than 320px*/
+    min-width: 320px;
+    text-align: center;
+    height: 334px;
+    background-color:var(--grey);
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+.logo-header{
+    width: 128px;
+    height: 24px;
+    align-self: center;
+    margin-bottom: 36px;
+}
+
+.text-header{
+    width: 288px;
+    height: 218px;
+    align-self: center;
+}
+
+.title-header{
+    font-weight: 700px;
+    color: var(--just-white);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+}
+
+.paragraph{
+    margin-top: 2.4rem;
+    font-weight: 50rem;
+    font-size: 1.4rem;
+    color: var(--soft-orange);
+}
+
+.button-header{
+    position: absolute;
+    width: 22.9rem;
+    height: 4.8rem;
+    padding: 15px ;
+    top: 27rem;
+    left: calc(50% - 118px);
+    margin-top: 3.5rem;
+    background-color: #FAF8F7;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 4px;
+    color: var(--warm-black);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    text-decoration: none;
+}
+
+.button-header span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/down-arrow.svg");
+
+}
