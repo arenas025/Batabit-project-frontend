@@ -195,13 +195,68 @@ main{
     margin-left: 10px;
 }
 
-.currency-table--container .table__bottom-right .table-right span{
-    display: inline-block;
-    background-image: url("./assets/icons/trending-down.svg");
-    width: 10px;
-    height: 6px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-left: 10px;
+.benefits{
+    height:910px;
+    min-width: 230px;
+    background-color: var(--warm-black);
+}
+
+.benefits-header{
+    width: auto;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color:var(--warm-black);
+    padding-top: 64px;
+    text-align: center;
+}
+
+.benefits-header h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--just-white);
+}
+
+.benefits-header p span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #808080
+    ;
+}
+.benefits-header p {
+    padding-top: 24px;
+}
+
+.benefits-container-cards{
+    width: auto;
+    max-width: 500px;
+    min-width: 230px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.benefits-card{
+    padding: 22px 18px 22px 18px;
+    background-color:var(--warm-black-1);
+    margin: 0 16px 16px 16px;
+    border-radius: 5px;
+}
+
+.benefits-card .card-1{
+    margin-top: 32px;
+}
+
+.benefits-card h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    color: var(--just-white);
+}
+
+
+.benefits-card p span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #808080;
 }
