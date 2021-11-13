@@ -196,7 +196,7 @@ main{
 }
 
 .benefits{
-    height:910px;
+    height:auto;
     min-width: 230px;
     background-color: var(--warm-black);
 }
@@ -219,8 +219,7 @@ main{
 .benefits-header p span{
     font-size: 14px;
     font-weight: 500;
-    color: #808080
-    ;
+    color: #808080;
 }
 .benefits-header p {
     padding-top: 24px;
@@ -233,6 +232,7 @@ main{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 32px;
 }
 
 .benefits-card{
@@ -254,9 +254,155 @@ main{
     color: var(--just-white);
 }
 
+.benefits-card .card-4{
+    margin-bottom: 46px;
+}
+
 
 .benefits-card p span{
     font-size: 14px;
     font-weight: 500;
     color: #808080;
+}
+
+.just-background .background{
+    display: block;
+    min-width: 230px;
+    max-width: 700px;
+    height: 516px;
+    background-image: url("./assets/img/bitcoinbaby2x.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding-top: 20px ;
+}
+
+.just-background{
+    background-color: #c77e34;
+}
+
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-color: var(--off-white);
+}
+
+.plan--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 50px;
+}
+
+.plan--title h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: black;
+}
+
+.plan--title p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-top: 24px;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.plans-container--cards{
+    position: relative;
+    scroll-snap-align:center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+
+.recommended{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+    left: calc(50% - 60px);
+    top: -15px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    padding: 6px;
+}
+
+.plan-card---title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: black;
+}
+
+.plan-info-container{
+    padding-top: 35px;
+}
+
+.plan-card--price{
+    margin-top: 8px;
+}
+
+.plan-card--price span{
+    font-size: 52px;
+    font-family: "Inter";
+    font-weight: 700;
+    /*here i used the vertical-align to set the price (99) in the bottom and the dollar sign in the top*/
+    vertical-align: text-top;
+}
+
+.plan-card--saving{
+    color: #757575;
+    font-family: "Inter";
+    font-family: 12px;
+    font-weight: 500;
+    line-height: 14,52px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.plan-card--ca{
+    width: 151px;
+    height: 48px;
+    border-radius: 5px;
+    border: 2px solid var(--bitcoin-orange);
+    background-color: var(--just-white);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.plan-card--ca span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("/assets/icons/orange-right-arrow.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
+/*here is the config to set the slide with the cards*/
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
