@@ -131,6 +131,15 @@ main{
     text-align: center;
 }
 
+.main-tables-container{
+    display: flex;
+    gap: 100px;
+    height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .main-currency-table{
     width: 70%;
     min-width: 235px;
@@ -316,6 +325,7 @@ main{
 
 .plans-container--cards{
     position: relative;
+    /*this is an animation that when i stay in the middle of 2 cards, it takes me to the one, the goal is not stay in between*/
     scroll-snap-align:center;
     width: 70%;
     min-width: 230px;
@@ -390,7 +400,7 @@ main{
 .plan-card--ca span{
     display: inline-block;
     width: 15px;
-    height: 15px;
+    height: 15px;    
     background-image: url("/assets/icons/orange-right-arrow.svg");
     background-position: center;
     background-size: cover;
@@ -401,8 +411,29 @@ main{
 /*here is the config to set the slide with the cards*/
 .plans-container--slider{
     display: flex;
-    height: 316px;
+    height: auto;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: var(--just-white);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer section ul{
+    list-style: none;
 }

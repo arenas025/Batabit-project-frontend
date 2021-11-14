@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tablet.css" media="(min-width: 930px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
@@ -29,6 +30,46 @@
                 </p>
             </div>
             <section class="main-tables-container">
+                <div class="main-currency-table">
+                    <div class="currency-table--container">
+                        <!--Here we are creating 4tr because are 4 rows and 2 td because there are 2 columns -->
+                        <table>
+                            <tr>
+                                <td class="currency-table--title">Monedas</td>
+                            </tr>
+                            <!--tr is used to indicate how many rows this table will have-->
+                            <tr>
+                                <!--tr is used to indicate the information that the table is gonna have-->
+                                <td class="table__top-left">Bitcoin</td>
+                                <td class="table__top-right table__right">$1.96
+                                    <span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!--tr is used to indicate the information that the table is gonna have-->
+                                <td>Ethereum</td>
+                                <td class="table__right">$0.07
+                                    <span class="table__right--ethereum"></span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <!--tr is used to indicate the information that the table is gonna have-->
+                                <td>Ripple</td>
+                                <td class="table__right">$2.15
+                                    <span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!--tr is used to indicate the information that the table is gonna have-->
+                                <td >Stellar</td>
+                                <td class="table__right">$4.96 
+                                    <span></span> 
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
                 <div class="main-currency-table">
                     <div class="currency-table--container">
                         <!--Here we are creating 4tr because are 4 rows and 2 td because there are 2 columns -->
@@ -154,6 +195,17 @@
             </section>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section>
+            <ul>
+                <li>LinkedIn</li>
+                <li>Crunchbase</li>
+                <li>Hackernews</li>
+            </ul>
+        </section>
+        <section>
+            <img src="./assets/img/logo-footer.svg" alt="Logo batabit 2020">
+        </section>
+    </footer>
 </body>
 </html>
